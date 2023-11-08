@@ -83,7 +83,18 @@ class SiteResultsProvider {
 	}
 
 
+/*
+    De klasse heeft een constructor (__construct) die een databaseverbinding ($con) accepteert.
 
+    De functie getNumResults($term) wordt gebruikt om het aantal zoekresultaten te berekenen op basis van een opgegeven zoekterm.
+
+    De functie getResultsHtml($page, $pageSize, $term) haalt daadwerkelijke zoekresultaten op uit de database, beperkt tot een specifieke pagina en paginagrootte, en genereert HTML-opmaak om deze resultaten weer te geven.
+
+    Binnen de getResultsHtml-functie worden resultaten opgehaald uit de database, en voor elke zoekresultaat worden de titel, URL en beschrijving getrimd (ingekort) om te voldoen aan bepaalde tekenlimieten. Vervolgens wordt HTML gegenereerd om de zoekresultaten weer te geven.
+
+    De trimField-functie wordt gebruikt om tekst in te korten en "..." toe te voegen als de tekst de opgegeven tekenlimiet overschrijdt.
+
+*/ 
 
 }
 ?>
