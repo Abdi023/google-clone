@@ -88,7 +88,13 @@ class ImageResultsProvider {
 		return $resultsHtml;
 	}
 
+/*
+    De class ImageResultsProvider heeft een constructor die een databaseverbinding (vermoedelijk een PDO-verbinding) verwacht.
 
+    De methode getNumResults($term) retourneert het totale aantal resultaten dat overeenkomt met de zoekterm $term in de database. Het gebruikt een SQL-query om het aantal resultaten op te halen waarvan de titel of alt-tekst overeenkomt met de zoekterm en waarvan de broken-status gelijk is aan 0.
+
+    De methode getResultsHtml($page, $pageSize, $term) haalt afbeeldingsresultaten op voor een bepaalde pagina en retourneert deze als een HTML-tekst. Het gebruikt een SQL-query om resultaten op te halen op basis van de zoekterm, pagina en paginagrootte. Vervolgens bouwt het HTML-opmaak voor elk resultaat, inclusief een link naar de afbeelding, een bijschrift en een stuk JavaScript om afbeeldingen dynamisch te laden.
+*/ 
 
 
 }
